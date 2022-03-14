@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        'worlds' => [
+            'Mars',
+            'Jupiter',
+            'Earth',
+            'Venus',
+            'Pluto',
+            'Uranus',
+            'Mercury',
+            'Neptune',
+        ]
+    ];
+
+    return view('home', $data);
 });

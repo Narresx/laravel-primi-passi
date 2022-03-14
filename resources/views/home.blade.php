@@ -7,7 +7,12 @@
     <title>Hello Laravel</title>
 </head>
 <body>
-    <div>Hello World</div>
-    
+    <div>Hello Worlds</div>
+
+    <ul>
+        @foreach($worlds as $world)
+        <li>{{ $world }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
